@@ -5,7 +5,7 @@ Simple API **Hooking** / **Detouring** 🪝 Library Written In **Nim**.
 ## 📺 Usage
 ```nim
 import nimhook, winim
-type msgbox = proc (hWnd: HWND, lpText: LPCSTR, lpCaption: LPCSTR, uType: UINT): int32{.stdcall.}
+# type msgbox = proc (hWnd: HWND, lpText: LPCSTR, lpCaption: LPCSTR, uType: UINT): int32{.stdcall.}
 
 var hook = newHook()
 proc detour() =
